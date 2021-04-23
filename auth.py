@@ -77,7 +77,9 @@ def login():
                 if user_details[3] == user_password:
                     bank_operation(user_details)
                 else:
-                    print("Invalid account or password!")
+                    print("Invalid account number or password!")
+            else:
+                print("Invalid account number or password!")
         login()
     else:
         zuri_bank()
